@@ -1,0 +1,17 @@
+package com.aayush.multiscreen;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class MainActivity3 extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main3);
+        TextView name3=findViewById(R.id.input3);
+        name3.setText(getIntent().getStringExtra("name3"));
+    }
+}
